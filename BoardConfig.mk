@@ -19,6 +19,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 TARGET_NO_BOOTLOADER := true
 
@@ -163,5 +164,8 @@ BOARD_USES_QC_TIME_SERVICES := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# CMHW
+BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
 
 -include vendor/moto/shamu/BoardConfigVendor.mk
